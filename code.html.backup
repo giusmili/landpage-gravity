@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Antigravity - Next-generation IDE</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#111827", // A dark gray/off-black for primary elements
+            "background-light": "#ffffff",
+            "background-dark": "#0a0a0a",
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1.5rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>.background-pattern {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD9u_Rr1_5BAnQZfJN7rDaEYbQ4v-Xkhz6-vnrBoU4ATDoYDxD_1_S0nn_qRLAdXtU3CvsX8C3XlE_pjiyiJ1nSiXyp9GeMkxgghgzeOsGsde1HtXcy3C8I9NZtsn_vujD5yLYKSCsZc-79AD71zgMBdy-ECjzTCxuH2NtIaWERdAtEnWXb1M--VQ3CvbOuPUQf9PQ_u3nZZGx1Jq1qNxE6gcxaQGli2CKrgTGUqiyu1AtUpC7MybjBmXBoa77xKLplUzsy0dOzVY0u);
+    background-size: 20px 20px;
+    opacity: 0.3
+    }
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    background-image: radial-gradient(circle at top right, #cce0ff 1%, transparent 30%);
+    mask-image: radial-gradient(circle, white 50%, transparent 100%);
+    opacity: 0.6
+    }
+body {
+    font-family: "Inter", sans-serif
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-display selection:bg-primary selection:text-white">
+<div class="relative min-h-screen overflow-hidden">
+<div class="background-pattern absolute inset-0"></div>
+<div class="hero-pattern"></div>
+<div class="relative container mx-auto px-6 py-6">
+<header class="flex items-center justify-between">
+<a class="flex items-center gap-2" href="#">
+<img alt="Company logo stylized as a multicolor letter 'A'" class="h-6 w-auto filter grayscale contrast-200 dark:brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJfzWdtauOV42Y2g4WPKPncsa_fEEolm-OpOUmPf1k7YscaeD5WXK45Up2TiQuJTXSFQpt6sviAIVsD8Q-ZCa1_2ec3QQ39G4pQq8jrgv9jyLHpxqM24Mmm_XeJ1S4UmvYO27y9PUDdUy3BoB0B6o-7LZFKa4NkdtB45EdPqWYVjsPkp1rr0qbn6PBAQiq-oFAvXZIVfEcTAIoT1AfDPK4h2kvNBbYo2etaT_X90Xs7y4bECv-tEk00_-iuabHx2Lg6kcpjAjyz64"/>
+<span class="text-lg font-semibold text-gray-900 dark:text-white">Antigravity</span>
+</a>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-400">
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Product</a>
+<a class="flex items-center gap-1 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">
+            Use Cases
+            <span class="material-icons-outlined text-base">expand_more</span>
+</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Pricing</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Blog</a>
+<a class="flex items-center gap-1 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">
+            Resources
+            <span class="material-icons-outlined text-base">expand_more</span>
+</a>
+</nav>
+<div class="flex items-center">
+<a class="bg-primary text-white text-sm font-medium px-4 py-2 rounded-full flex items-center gap-2 shadow-sm hover:opacity-90 transition-opacity" href="#">
+              Download
+              <span class="material-icons-outlined text-base">download</span>
+</a>
+<button class="md:hidden ml-4 p-2 rounded-full text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-icons-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="text-center pt-24 pb-32 md:pt-32 md:pb-40">
+<div class="flex items-center justify-center gap-2 mb-8">
+<img alt="Company logo stylized as a multicolor letter 'A'" class="h-8 w-auto filter grayscale contrast-200 dark:brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzpVOLqZ0pyGiDEk6ABUXS2chj0C5-7SCH9wNDVOu11xINoINUpmq6FveUZKJd43i5dJaN7h3_jEuTZ3Xsbhio8HXPdSymuLhVt0vcR0PAlsn485cSsL0JC2ygQzO2opiMzWf-ydYFVzbP2Dj2768PvL3kbagVvY1Ja9gFIT2Y1kjOb1FYB0ekQfxNQT4NVt6YmjDrLJfbrLWxc69M1SxCc7j2aFTJvc4jHES5Psj_4JgtrsLTLYMaR4JFzyim0kCI3sYnSW2d84kw"/>
+<span class="text-xl font-semibold text-gray-900 dark:text-white">Antigravity</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-gray-900 dark:text-white">
+          Experience liftoff
+        </h1>
+<p class="text-5xl md:text-7xl font-bold tracking-tighter text-gray-600 dark:text-gray-400 mt-2">
+          with the next-generation IDE
+        </p>
+<div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="bg-primary text-white font-medium px-6 py-3 rounded-full flex items-center gap-2.5 shadow-lg hover:opacity-90 transition-opacity w-full sm:w-auto" href="#">
+<svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.13 1.5H3.5v7.63h7.63V1.5zm0 13.37H3.5v7.63h7.63V14.87zm9.37-13.37h-7.63v7.63h7.63V1.5zm-7.63 13.37h7.63v7.63h-7.63V14.87z"></path></svg>
+            Download for Windows
+          </a>
+<a class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium px-6 py-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors w-full sm:w-auto" href="#">
+            Explore use cases
+          </a>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
