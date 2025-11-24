@@ -29,4 +29,6 @@ Une landing page moderne construite avec Next.js et React, stylée en CSS classi
 - Script de thème: `public/theme.js`
 
 ## Licence
-Non spécifiée. Ajoutez votre licence si nécessaire.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
+
+Ce projet est distribué sous licence MIT.
